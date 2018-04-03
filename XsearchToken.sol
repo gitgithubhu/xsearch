@@ -211,7 +211,7 @@ contract BurnableToken is StandardToken {
 
 contract XsearchToken is BurnableToken {
     
-  string public constant name = "Xsearch Token";
+  string public constant name = "XSearch Token";
    
   string public constant symbol = "XSE";
     
@@ -245,12 +245,12 @@ contract Crowdsale is Ownable {
   uint rate;
 
   function Crowdsale() {
-    multisig = 0xb61A31C0Bb38978049Ebcc7EaE0B16718A80ec04; //escrow wallet
-    restricted = 0x6A13fA3292B191956E22B0e510bD97111992694b; // wallet for 15%
+    multisig = 0xd4DB7d2086C46CDd5F21c46613B520290ABfC9D6; //escrow wallet
+    restricted = 0x25fbfaA7bB3FfEb697Fe59Bb464Fc49299ef5563; // wallet for 15%
     restrictedPercent = 15; // 15% procent for Founders, Bounties, Distribution cost, Management costs
     rate = 1000000000000000000000; //rate
     start = 1522195200;  //start date
-    period = 33; // ico period
+    period = 63; // ico period
   }
 
   modifier saleIsOn() {
